@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+:root {
+    --base-dark : #2C3333;
+    --base-light : #E7F6F2;
+    --dark-blue : #395B64;
+    --light-blue : #A5C9CA;
+    --main-font : 'Quicksand', sans-serif;
+}
+
+* {
+    letter-spacing: 1.5px;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: var(--main-font);
+    background-color: var(--light-blue);
+    color: var(--base-light);
+}
+
+/*Navbar*/
+
+nav {
+    background-color: var(--dark-blue);
+    padding: 1em;
+    text-align: center;
+    border-bottom: 2px solid var(--base-dark);
+}
+
+nav h1 {
+    color: yellow;
+    font-weight: 1000;
+    font-size: 30px;
+}
+
+nav h1 span {
+    color: rgb(12, 171, 211);
+    background-color: var(--base-dark);
+    border-radius: 7px;
+    padding: 5px;
+}
+
+/*Search bar*/
+
+#search-bar-section {
+    background-color: var(--dark-blue);
+    padding: 1em;
+    text-align: center;
+    border-bottom: 2px solid var(--base-dark);
+}
+
+.search-bar {
+    width: 50%;
+    margin: 0 auto;
+    border: none;
+    padding: 0.7em;
+    border-radius: 1.1em;
+    background-color: var(--light-blue);
+    color: var(--base-dark);
+    font-family: var(--main-font);
+    font-weight: 700;
+}
+
+.search-btn {
+    padding: 0.7em;
+    border-radius: 1.1em;
+    background-color: var(--light-blue);
+    color: var(--base-dark);
+    font-family: var(--main-font);
+    width: 4em;
+    transition: 0.4s;
+    border: 1.1px solid var(--dark-blue);
+}
+
+.search-btn:hover {
+    background-color: var(--dark-blue);
+    transition: 0.4s;
+    width: 5.5em;
+    cursor: pointer;
+    border: 1.1px solid var(--base-dark);
+}
+
+/*Movie section*/
+.movie-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 2em;
+    justify-content: center;
+}
+
+.title {
+    padding: 1em;
+    margin-bottom: 1em;
+    margin-top: -1em;
+}
+
+.poster-img {
+    padding: 0;
+    margin: 0;
+    width: 300px;
+    height: 420px;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+}
+
+.movie-element {
+    background-color: var(--dark-blue);
+    color: var(--base-light);
+    text-align: center;
+    width: 300px;
+    border-radius: 1em;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.score{
+    background-color: var(--light-blue);
+    padding: 5px;
+    border-radius: 0.5em;
+    color: var(--base-dark);
+    font-weight: 1000;
+}
+
+.movie-info {
+    background-color: var(--base-dark);
+    padding: 6.5px 6px 6.5px 6px;
+    border-radius: 0.5em;
+    color: var(--base-light);
+    width: 5em;
+    border: none;
+    font-family: var(--main-font);
+}
+
+
+/*-----Pemisah-----*/
+/*Media Query untuk tampilan mobile*/
