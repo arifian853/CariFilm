@@ -95,18 +95,12 @@ nav h1 span {
     justify-content: center;
 }
 
-.title {
-    padding: 1em;
-    margin-bottom: 1em;
-    margin-top: -1em;
-}
-
 .poster-img {
     padding: 0;
     margin: 0;
     width: 300px;
     height: 420px;
-    border-top-right-radius: 1em;
+    border-bottom-left-radius: 1em;
     border-top-left-radius: 1em;
 }
 
@@ -114,15 +108,11 @@ nav h1 span {
     background-color: var(--dark-blue);
     color: var(--base-light);
     text-align: center;
-    width: 300px;
-    border-radius: 1em;
-}
-
-.btns {
+    width: 60em;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 1.5em;
+    border-radius: 1em;
+    display: flex;
 }
 
 .score{
@@ -133,16 +123,60 @@ nav h1 span {
     font-weight: 1000;
 }
 
-.movie-info {
-    background-color: var(--base-dark);
-    padding: 6.5px 6px 6.5px 6px;
-    border-radius: 0.5em;
-    color: var(--base-light);
-    width: 5em;
-    border: none;
-    font-family: var(--main-font);
+.overview {
+    padding: 1.5em;
+    text-align: left;
+    background-color: var(--dark-blue);
+    border-radius: 1em;
 }
 
+footer {
+    background-color: var(--dark-blue);
+    padding: 1em;
+    border-top: 1px solid var(--base-dark);
+    text-align: center;
+}
 
 /*-----Pemisah-----*/
 /*Media Query untuk tampilan mobile*/
+
+@media screen and (max-width: 768px) {
+    body, html {
+        background-repeat: no-repeat;
+        scroll-behavior: smooth;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+
+    .search-bar {
+        width: 65%;
+        border: none;
+        padding: 0.7em;
+        border-radius: 1.1em;
+        background-color: var(--light-blue);
+        color: var(--base-dark);
+        font-family: var(--main-font);
+        font-weight: 700;
+    }
+
+    .movie-element {
+        background-color: var(--dark-blue);
+        color: var(--base-light);
+        text-align: center;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 1em;
+        display: flex;
+    }
+
+    .poster-img {
+        padding: 0;
+        margin: 0;
+        width: 300px;
+        height: 420px;
+        border-top-right-radius: 1em;
+        border-top-left-radius: 1em;
+    }
+}

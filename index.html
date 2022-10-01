@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/6f419e537a.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
-    <title>Search</title>
+    <title>CariFilm</title>
 </head>
     <header>
         <nav>
@@ -16,46 +15,39 @@
         </nav>
     </header>
 <body>
-<section id="search-bar-section">
-    <input class="search-bar" type="search" name="" id="" placeholder="Masukkan nama film disini"> <button class="search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-</section>
+<form id="search-bar-section">
+    <input class="search-bar" type="text" id="searchFilm" placeholder="Masukkan nama film disini"> 
+    <button id="submit-title" class="search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+</form>
+
 <section id="movie-section">
-    <div class="movie-wrapper">
+    <div class="movie-wrapper" id="mainSection">
 
         <div class="movie-element">
             <img class="poster-img" src="img/Interstellar-poster.jpg" alt="">
-            <div class="title">
-                    <h3>Interstellar</h3> 
-                <div class="btns">
-                    <span class="score"><i class="fa-solid fa-star"></i>8.6/10</span> 
-                    <button class="movie-info">Info</button>
+                <div class="overview" id="info">
+                        <h1>Interstellar</h1>
+                        <span class="score"><i class="fa-solid fa-star"></i>8.6/10</span> 
+                        <br> <br>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quae aperiam quibusdam fugit impedit. Praesentium ipsum sunt ut nemo soluta.</p>
+                        <hr />
+                        <p>Release Date : 01/01/2001</p>
+                        <p>Genre : Science Fiction, Action, Adventure</p>  
                 </div>
-            </div>
-        </div>
-
-        <div class="movie-element">
-            <img class="poster-img" src="img/one-piece-film-red-poster.png" alt="">
-            <div class="title">
-                <h3>One Piece Movie : Red</h3> 
-            <div class="btns">
-                <span class="score"><i class="fa-solid fa-star"></i>8.6/10</span> 
-                <button class="movie-info">Info</button>
-            </div>
-        </div>
-        </div>
-
-        <div class="movie-element">
-            <img class="poster-img" src="img/jujutsu-kaisen-0.jpg" alt="">
-            <div class="title">
-                <h3>Jujutsu Kaisen Movie 0</h3> 
-            <div class="btns">
-                <span class="score"><i class="fa-solid fa-star"></i>8.6/10</span> 
-                <button class="movie-info">Info</button>
-            </div>
-        </div>
         </div>
 
     </div>
 </section>
 </body>
+<footer>
+    © 2022, Arifian Saputra. 
+    <get-date>
+        
+    </get-date>
+</footer>
 </html>
+<!-- <script type="module" src="src/index.js"></script> --> 
+<script type="module" src="src/search-function.js"></script>
+<script src="src/date-function.js"></script> 
+<script src="dist/main.js"></script>

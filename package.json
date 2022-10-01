@@ -1,6 +1,6 @@
 {
   "name": "submission-03",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Submission for SIB Dioding",
   "scripts": {
     "build": "webpack"
